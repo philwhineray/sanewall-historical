@@ -1,3 +1,19 @@
+sanewall (1.1.6) unstable; urgency=low
+
+  * Prevent iptables errors being silently ignored
+
+  * Various minor improvements
+    - Use flock, not internal locking, when unconfigured
+    - Exit immediately if we cannot create lockfile
+    - Ensure set_or_def picks a path
+    - Better explanations in uid/gid matching
+    - Detected command used in last_save_modules.sh
+      should be "modprobe -q" or "insmod"
+    - set_or_def now correctly handles program with options
+    - Update known issues after further testing
+
+ -- Phil Whineray <phil@sanewall.org>  Mon,  4 Nov 2013 07:35:00 +0000
+
 sanewall (1.1.5) unstable; urgency=low
 
   * Use flock(1) instead of lockfile(1)

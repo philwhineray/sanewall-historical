@@ -1,3 +1,19 @@
+2013/11/04:
+
+Release of version 1.1.6
+
+Prevent iptables errors being silently ignored (since 1.1.2)
+
+Various minor improvements
+ - Use flock, not internal locking, when unconfigured
+ - Exit immediately if we cannot create lockfile
+ - Ensure set_or_def picks a path
+ - Better explanations in uid/gid matching
+ - Detected command used in last_save_modules.sh
+   should be "modprobe -q" or "insmod"
+ - set_or_def now correctly handles program with options
+ - Update known issues after further testing
+
 2013/08/19:
 
 Release of version 1.1.5
